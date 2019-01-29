@@ -1,2 +1,0 @@
-# dramaretskiy.github.io
-< Хостинг >
