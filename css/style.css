@@ -162,9 +162,45 @@ body {
   padding-right: 0;
 }
 .main-navigation__link {
+  position: relative;
+  display: inline-block;
   font-weight: 300;
   color: #ffffff;
   text-decoration: none;
+  transition: 0.3s;
+}
+.main-navigation__link::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #ffffff;
+  transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+}
+.main-navigation__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #ffffff;
+  transition: width 0.5s ease-in-out;
+  left: 50%;
+}
+.main-navigation__link:hover::before {
+  width: 50%;
+  left: 0;
+}
+.main-navigation__link:hover::after {
+  width: 50%;
+}
+.main-navigation__link:active {
+  opacity: 0.4;
+  transition: 0.3s;
 }
 .page-header__headline {
   margin: 0;
@@ -314,6 +350,16 @@ body {
   text-transform: uppercase;
   background: none;
   border: 3px solid #ffffff;
+  transition: 0.5s;
+}
+.about__trainer-button:hover {
+  color: #000000;
+  border-color: #000000;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.about__trainer-button:active {
+  opacity: 0.3;
 }
 .about__plus {
   padding: 0 80px;
@@ -582,7 +628,7 @@ body {
 }
 .comparison__words {
   width: 900px;
-  height: 80px;
+  min-height: 80px;
   margin: 0;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 80px;
@@ -733,6 +779,17 @@ body {
   text-transform: uppercase;
   background-color: #2f2f2f;
   border: 2px solid #ffffff;
+  transition: 0.5s;
+}
+.courses__detail-button:hover {
+  color: #373737;
+  background-color: #ffffff;
+  border-color: #373737;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.courses__detail-button:active {
+  opacity: 0.7;
 }
 .courses__register-button {
   width: 100%;
@@ -748,9 +805,19 @@ body {
   border-left: 2px solid #cbcbcb;
   border-right: 2px solid #cbcbcb;
   border-bottom: 2px solid #cbcbcb;
+  transition: 0.5s;
 }
 .courses__register-button b {
   font-weight: 800;
+}
+.courses__register-button:hover {
+  font-size: 37px;
+  border-color: #878787;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.courses__register-button:active {
+  opacity: 0.5;
 }
 .courses__discount {
   margin: 0;
@@ -797,4 +864,15 @@ body {
   color: #ffffff;
   background: transparent;
   border: 2px solid #ffffff;
+  transition: 0.5s;
+}
+.form__submit-btn:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #000000;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.form__submit-btn:active {
+  opacity: 0.3;
 }
