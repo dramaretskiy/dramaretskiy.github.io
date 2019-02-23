@@ -68,6 +68,12 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
+.main-navigation__link:hover {
+  border-bottom: 1px solid #000000;
+}
+.main-navigation__link:active {
+  opacity: 0.5;
+}
 .catalog__wrapper {
   padding: 0 110px;
 }
@@ -630,6 +636,9 @@ input[type=checkbox]:checked + label::before {
 }
 .page-footer__link:hover {
   text-decoration: underline;
+}
+.page-footer__link:active {
+  opacity: 0.5;
 }
 .page-footer__img-mail {
   margin-bottom: 32px;
