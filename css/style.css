@@ -613,7 +613,7 @@ input[type=checkbox]:checked + label::before {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
+  width: 850px;
   margin: 0 auto;
   margin-bottom: 45px;
 }
@@ -636,12 +636,13 @@ input[type=checkbox]:checked + label::before {
 }
 .page-footer__form {
   display: flex;
+  justify-content: space-between;
   width: 50%;
   margin: 0 auto;
   margin-bottom: 40px;
 }
 .form__input {
-  width: 65%;
+  width: 70%;
   margin: 0;
   margin-right: 16px;
   padding: 0 17px;
