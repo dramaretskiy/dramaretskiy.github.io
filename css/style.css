@@ -63,16 +63,25 @@ body {
   margin: 20px 20px;
 }
 .main-navigation__link {
+  display: inline-block;
   color: #000000;
+  line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
 }
-.main-navigation__link:hover {
-  border-bottom: 1px solid #000000;
+.main-navigation__link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #000000;
+  transition: width 0.3s ease-in-out;
 }
-.main-navigation__link:active {
-  opacity: 0.5;
+.main-navigation__link:hover::after,
+.main-navigation__link:focus::after {
+  width: 100%;
 }
 .catalog__wrapper {
   padding: 0 110px;
@@ -204,6 +213,7 @@ body {
   font-size: 15px;
   font-weight: 400;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .catalog__label::before {
   content: "";
@@ -301,7 +311,7 @@ input[type=checkbox]:checked + label::before {
 .main-cashback__text {
   position: relative;
   margin: 0;
-  padding-top: 7px;
+  padding-top: 8px;
   padding-left: 32px;
   font-size: 17px;
 }
@@ -593,6 +603,8 @@ input[type=checkbox]:checked + label::before {
 .bar .rp {
   left: 100%;
   top: -8px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 .page-footer {
   background-color: #f7f7f7;
@@ -628,17 +640,25 @@ input[type=checkbox]:checked + label::before {
   margin-bottom: 15px;
 }
 .page-footer__link {
+  display: inline-block;
   color: #7c7c7c;
   font-size: 17px;
   font-weight: 600;
-  line-height: 17px;
+  line-height: 1;
   text-decoration: none;
+  cursor: pointer;
 }
-.page-footer__link:hover {
-  text-decoration: underline;
+.page-footer__link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #7c7c7c;
+  transition: width 0.3s ease-in-out;
 }
-.page-footer__link:active {
-  opacity: 0.5;
+.page-footer__link:hover::after,
+.page-footer__link:focus::after {
+  width: 100%;
 }
 .page-footer__img-mail {
   margin-bottom: 32px;
@@ -685,14 +705,16 @@ input[type=checkbox]:checked + label::before {
   background-color: #000000;
   border: none;
   border-radius: 2px;
-  transition: 0.5s;
+  transition: 0.4s;
+  cursor: pointer;
 }
 .page-footer__form-submit:hover {
-  color: #000000;
-  background-color: #f7f7f7;
-  border: 1px inset #000000;
-  cursor: pointer;
-  transition: 0.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.page-footer__form-submit:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 .social__list {
   margin: 0;
