@@ -562,6 +562,17 @@ input[type=checkbox]:checked + label::before {
   .sorting__main {
     width: 73%;
   }
+  .fixxxed {
+    position: fixed;
+    top: 50px;
+  }
+  .absss {
+    position: absolute;
+    bottom: 0;
+  }
+  .sorting__info {
+    position: relative;
+  }
   .main-middle__list {
     display: flex;
     flex-wrap: wrap;
