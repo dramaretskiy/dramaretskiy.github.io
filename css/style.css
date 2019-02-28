@@ -261,6 +261,12 @@ body {
     max-width: 525px;
     padding: 0 80px;
   }
+  .main-navigation__item {
+    margin: 10px;
+  }
+  .main-navigation__link {
+    font-size: 12px;
+  }
 }
 .catalog__wrapper {
   padding: 0 20px;
