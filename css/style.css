@@ -754,7 +754,7 @@ input[type=checkbox]:checked + label::before {
     justify-content: space-between;
   }
   .main-middle__item {
-    width: 200px;
+    width: 24%;
   }
   .prev-button,
   .next-button {
