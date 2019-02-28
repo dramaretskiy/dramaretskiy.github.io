@@ -83,7 +83,9 @@ body {
 @media (min-width: 768px) {
   .main-navigation__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 825px;
     padding: 0 80px;
   }
 }
@@ -649,15 +651,6 @@ input[type=checkbox]:checked + label::before {
   padding-bottom: 50px;
   text-align: center;
 }
-.page-footer__slogan {
-  margin: 0;
-  margin-bottom: 26px;
-  font-size: 20px;
-  font-weight: 600;
-  font-style: italic;
-  line-height: 17px;
-  color: #0c4a31;
-}
 .page-footer__list {
   margin: 0;
   padding: 0;
@@ -799,6 +792,7 @@ input[type=checkbox]:checked + label::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 900px;
   }
   .page-footer__img-mail {
     width: 326px;
