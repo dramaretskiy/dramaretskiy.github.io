@@ -1,0 +1,114 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-icon-mobile-facebook {
+  background-image: url(sprite.png);
+  background-position: -203px -114px;
+  width: 26px;
+  height: 26px;
+}
+.icon-icon-mobile-instagram {
+  background-image: url(sprite.png);
+  background-position: -203px -36px;
+  width: 26px;
+  height: 26px;
+}
+.icon-icon-mobile-pinterest {
+  background-image: url(sprite.png);
+  background-position: -203px -88px;
+  width: 26px;
+  height: 26px;
+}
+.icon-icon-mobile-vk {
+  background-image: url(sprite.png);
+  background-position: -203px -62px;
+  width: 26px;
+  height: 26px;
+}
+.icon-icon-pdf-mobile {
+  background-image: url(sprite.png);
+  background-position: -203px -140px;
+  width: 24px;
+  height: 27px;
+}
+.icon-icon-pdf-tablet {
+  background-image: url(sprite.png);
+  background-position: -203px 0px;
+  width: 32px;
+  height: 36px;
+}
+.icon-icon-tablet-facebook {
+  background-image: url(sprite.png);
+  background-position: -47px -144px;
+  width: 34px;
+  height: 34px;
+}
+.icon-icon-tablet-instagram {
+  background-image: url(sprite.png);
+  background-position: -81px -144px;
+  width: 34px;
+  height: 34px;
+}
+.icon-icon-tablet-pinterest {
+  background-image: url(sprite.png);
+  background-position: -115px -144px;
+  width: 34px;
+  height: 34px;
+}
+.icon-icon-tablet-vk {
+  background-image: url(sprite.png);
+  background-position: -149px -144px;
+  width: 34px;
+  height: 34px;
+}
+.icon-leaf-1 {
+  background-image: url(sprite.png);
+  background-position: 0px -144px;
+  width: 47px;
+  height: 36px;
+}
+.icon-leaf-2 {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 106px;
+  height: 91px;
+}
+.icon-leaf-3 {
+  background-image: url(sprite.png);
+  background-position: 0px -91px;
+  width: 69px;
+  height: 53px;
+}
+.icon-leaf-4 {
+  background-image: url(sprite.png);
+  background-position: -69px -91px;
+  width: 65px;
+  height: 53px;
+}
+.icon-leaf-5 {
+  background-image: url(sprite.png);
+  background-position: -106px 0px;
+  width: 97px;
+  height: 62px;
+}
+.icon-leaf-6 {
+  background-image: url(sprite.png);
+  background-position: -134px -91px;
+  width: 58px;
+  height: 50px;
+}
