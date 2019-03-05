@@ -785,6 +785,11 @@ input[type=checkbox]:checked + label::before {
     width: 24%;
   }
 }
+@media (max-width: 767px) {
+  .main-paginators__btn:hover {
+    text-decoration: none;
+  }
+}
 label[for="amount"] {
   font-size: 0;
 }
@@ -997,5 +1002,19 @@ label[for="amount"] {
     right: 2px;
     width: auto;
     padding: 0 25px;
+  }
+}
+@media (max-width: 767px) {
+  .page-footer__link:hover::after,
+  .page-footer__link:focus::after {
+    display: none;
+  }
+  .page-footer__form-submit:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .page-footer__form-submit:active {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
