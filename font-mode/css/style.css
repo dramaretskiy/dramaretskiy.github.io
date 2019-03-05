@@ -652,12 +652,13 @@ input[type=checkbox]:checked + label::before {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .prev-button,
 .next-button {
   position: relative;
   margin: 0;
-  padding: 0;
+  marginpadding: 0;
   font-family: "Crimson Text";
   color: #000000;
   font-size: 0;
@@ -697,6 +698,7 @@ input[type=checkbox]:checked + label::before {
   opacity: 0.5;
 }
 .prev-button {
+  margin-right: 50px;
   padding-left: 31px;
 }
 .prev-button::before,
@@ -704,6 +706,7 @@ input[type=checkbox]:checked + label::before {
   left: 0;
 }
 .next-button {
+  margin-left: 50px;
   padding-right: 31px;
 }
 .next-button::before,
