@@ -37,7 +37,7 @@ body {
   font-weight: 600;
   color: #000000;
 }
-@media (max-width: 767px) {
+@media (max-width: 1359px) {
   .main-navigation__link:hover::after,
   .main-navigation__link:focus::after {
     display: none;
@@ -544,13 +544,13 @@ input[type=checkbox]:checked + label::before {
 .main-cashback__sort-btn::after {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 6px;
   width: 12px;
   height: 2px;
   background-color: #000;
 }
 .main-cashback__sort-btn::before {
-  right: 8px;
+  right: 7px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -585,20 +585,26 @@ input[type=checkbox]:checked + label::before {
   margin-bottom: 16px;
   background-color: #f7f7f7;
 }
-.main-middle__item::after {
-  content: "";
+.item-star {
   position: absolute;
   top: 18px;
   right: 18px;
   width: 20px;
   height: 19px;
+  background: none;
+  border: none;
   background-image: url(../img/star-empty-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 19px;
+  cursor: pointer;
 }
-.main-middle__item:hover::after {
+.item-star:hover {
   background-image: url(../img/star-black-icon.svg);
+}
+.main-middle__link {
+  text-decoration: none;
+  color: #000000;
 }
 .item-name,
 .item-descr,
@@ -672,13 +678,13 @@ input[type=checkbox]:checked + label::before {
 }
 .prev-button::before,
 .next-button::before {
-  top: 5px;
+  top: 4px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 .prev-button::after,
 .next-button::after {
-  top: 10px;
+  top: 9px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -785,9 +791,14 @@ input[type=checkbox]:checked + label::before {
     width: 24%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1359px) {
   .main-paginators__btn:hover {
     text-decoration: none;
+  }
+}
+@media (max-width: 767px) {
+  .item-star {
+    right: 25%;
   }
 }
 label[for="amount"] {
@@ -1004,7 +1015,7 @@ label[for="amount"] {
     padding: 0 25px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1359px) {
   .page-footer__link:hover::after,
   .page-footer__link:focus::after {
     display: none;
