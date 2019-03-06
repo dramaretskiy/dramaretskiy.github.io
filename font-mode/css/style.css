@@ -384,6 +384,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+.sorting__filters--closed {
+  display: none;
+}
 .sorting__filters p {
   margin-top: 0;
 }
