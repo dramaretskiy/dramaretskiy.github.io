@@ -33,6 +33,9 @@ body {
   color: #283277;
   opacity: 0.5;
 }
+.advantages__wrapper {
+  padding-bottom: 25px;
+}
 .advantages__comparison {
   display: flex;
   flex-direction: row;
@@ -44,7 +47,120 @@ body {
   margin: 0;
   margin-top: auto;
   margin-bottom: auto;
+  font-size: 14px;
 }
 .advantages__comparison img {
   margin-left: 10px;
+}
+.advantages__main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.advantages__main-left {
+  width: 30%;
+}
+.advantages__headline {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  text-align: center;
+}
+.advantages__slogan {
+  font-size: 24px;
+}
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.advantages__item {
+  margin-bottom: 25px;
+}
+.advantages__item h2 {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.advantages__item-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.advantages__item-list li {
+  position: relative;
+  padding-left: 10px;
+}
+.advantages__item-list li::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(#f8fdff, #13bdff);
+  border-radius: 50%;
+}
+.advantages__main-right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.advantages__main-right picture {
+  text-align: center;
+}
+.advantages__main-right picture img {
+  margin-top: -35px;
+}
+.advantages__description {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+.advantages__description h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  color: #283277;
+  opacity: 0.8;
+}
+.advantages__description p {
+  margin: 0;
+  opacity: 0.7;
+}
+.advantages__annotation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.advantages__annotation a {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #0072b9;
+}
+.advantages__annotation a:last-child {
+  margin-bottom: 0;
+}
+.details__wrapper {
+  padding: 0 10px;
+}
+.details__slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.accordion-group-title {
+  margin: 0;
+}
+.accordion-group-body {
+  display: none;
+}
+.active {
+  display: block;
 }
