@@ -8,13 +8,13 @@
   font-family: "PF Centro Sans Pro";
   font-weight: 500;
   font-style: normal;
-  src: local("PF Centro Sans Pro"), url("../fonts/PFCentroSansPro-Medium.woff") format("woff");
+  src: local("PF Centro Sans Pro Bold"), url("../fonts/PFCentroSansPro-Medium.woff") format("woff");
 }
 body {
   margin: 0;
   padding: 0;
   font-family: "PF Centro Sans Pro";
-  font-weight: bold;
+  font-weight: normal;
   font-size: 12px;
   color: #283277;
 }
@@ -34,7 +34,7 @@ body {
   opacity: 0.5;
 }
 .advantages__wrapper {
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 .advantages__comparison {
   display: flex;
@@ -92,6 +92,7 @@ body {
 .advantages__item-list li {
   position: relative;
   padding-left: 10px;
+  padding-bottom: 5px;
 }
 .advantages__item-list li::before {
   content: "";
@@ -147,20 +148,149 @@ body {
 }
 .details__wrapper {
   padding: 0 10px;
+  padding-bottom: 60px;
 }
 .details__slogan {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10px;
   font-size: 25px;
-  font-weight: bold;
+}
+.details__accordion {
+  margin-bottom: 30px;
+}
+.accordion-group {
+  text-align: center;
 }
 .accordion-group-title {
   margin: 0;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.accordion-group-title img {
+  margin-left: 5px;
 }
 .accordion-group-body {
   display: none;
+  padding: 0 10px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  font-weight: normal;
+  opacity: 0.8;
+}
+.accordion-group-body a {
+  font-family: "PF Centro Sans Pro";
+  font-size: 15px;
+  color: #283277;
+  font-weight: 700;
+  opacity: 1;
+}
+.panel-active img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .active {
   display: block;
+}
+.details__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details__button {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 10px 25px;
+  font-family: "PF Centro Sans Pro";
+  font-size: 14px;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+}
+.details__button:last-child {
+  margin-bottom: 0;
+}
+.details__button--more {
+  color: white;
+  background: linear-gradient(to bottom, #74d2eb, #0173b9);
+}
+.details__button--buy {
+  color: #0072B9;
+  font-weight: bold;
+  background: linear-gradient(to top, #78b6d9, #ffffff);
+  border: 1px solid #0072b9;
+}
+.videos {
+  background-image: url(../img/mobile/video-background-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.videos__wrapper {
+  padding: 0 10px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.videos__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.videos__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.videos__container {
+  margin-bottom: 10px;
+}
+.videos__link {
+  display: block;
+  margin: 0;
+  margin-bottom: 45px;
+  padding: 0;
+  border: 0;
+  font-family: "PF Centro Sans Pro";
+  font-size: 14px;
+  font-weight: normal;
+  color: #283277;
+  background: transparent;
+  border-bottom: 1px solid #283277;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+.videos__link--last-child {
+  margin-bottom: 0;
+}
+.page-footer__wrapper {
+  padding: 0 10px;
+  padding-bottom: 20px;
+}
+.page-footer__disclaimer {
+  margin-bottom: 20px;
+  padding: 0 10px;
+  font-size: 13px;
+  color: #0072b9;
+  opacity: 0.8;
+  text-align: center;
+}
+.page-footer__disclaimer .uppercase {
+  text-transform: uppercase;
+}
+.page-footer__copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.page-footer__copyright p {
+  margin: 0;
+  padding-top: 5px;
+  font-size: 12px;
+  color: #ffc000;
+}
+.page-footer__copyright img {
+  margin-left: 20px;
 }
