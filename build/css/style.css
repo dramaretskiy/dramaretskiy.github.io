@@ -1,10 +1,16 @@
 @font-face {
-  font-family: "PFCentroSansPro-Bold";
-  src: local("PFCentroSansPro-Bold"), url("https://nomail.com.ua/files/woff/ec8a9c0fef80b63b9120b37a3035d78b.woff") format("woff");
+  font-family: "PFCentroSansPro-Medium";
+  src: url("PFCentroSansPro-Medium.eot");
+  src: url("../fonts/PFCentroSansPro-Medium.eot") format("embedded-opentype"), url("../fonts/PFCentroSansPro-Medium.woff") format("woff"), url("../fonts/PFCentroSansPro-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "PFCentroSansPro-Medium";
-  src: local("PFCentroSansPro-Medium"), url("https://nomail.com.ua/files/woff/c410f40024f5fbae8551f658db49f47d.woff") format("woff");
+  font-family: "PFCentroSansPro-Bold";
+  src: url("PFCentroSansPro-Bold.eot");
+  src: url("../fonts/PFCentroSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro-Bold.woff") format("woff"), url("../fonts/PFCentroSansPro-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   position: relative;
