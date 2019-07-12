@@ -87,7 +87,7 @@ img {
 /************************/
 
 .calculations__wrapper {
-  margin: 0 60px;
+  margin: 0 100px;
   padding: 100px 0;
 }
 
@@ -136,7 +136,7 @@ img {
 /******************/
 
 .charts__wrapper {
-  margin: 0 60px;
+  margin: 0 100px;
   padding-bottom: 100px;
 }
 
@@ -171,7 +171,8 @@ img {
 /*****************/
 
 .graph__wrapper {
-  margin: 0 60px;
+  margin: 0 100px;
+
   padding-bottom: 50px;
 }
 
