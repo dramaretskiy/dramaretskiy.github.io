@@ -2415,7 +2415,7 @@ li[role="presentation"] button {
   height: 345px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  background-image: url(../../images/bubble-2-bg.svg);
+  background-image: url(../images/bubble-2-bg.svg);
 }
 
 .example__item--finquest {
