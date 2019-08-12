@@ -174,6 +174,13 @@ li[role="presentation"] button {
   overflow: hidden;
 }
 
+.white__mask--camps {
+  left: 0;
+  width: 400px;
+  -webkit-transform: skew(-20deg, 0) translateX(0);
+          transform: skew(-20deg, 0) translateX(0);
+}
+
 .white__mask--footer {
   right: 0;
   width: 400px;
@@ -183,7 +190,7 @@ li[role="presentation"] button {
 
 .white__mask--talk {
   left: 0;
-  width: 410px;
+  width: 510px;
   -webkit-transform: skew(-20deg, 0) translateX(0);
           transform: skew(-20deg, 0) translateX(0);
 }
@@ -202,9 +209,24 @@ li[role="presentation"] button {
           transform: skew(-20deg, 0) translateX(0);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .white__mask--talk {
-    width: 150px;
+    width: 410px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .white__mask--camps {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .white__mask--camps {
+    width: 350px;
+  }
+  .white__mask--talk {
+    width: 230px;
   }
   .white__mask--accelerated {
     width: 150px;
@@ -2385,7 +2407,7 @@ li[role="presentation"] button {
   height: 227px;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  background-image: url(../images/bubble-1-bg.svg);
+  background-image: url(../../images/bubble-1-bg.svg);
 }
 
 .example__item--sparrho {
@@ -2393,7 +2415,7 @@ li[role="presentation"] button {
   height: 345px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  background-image: url(../images/bubble-2-bg.svg);
+  background-image: url(../../images/bubble-2-bg.svg);
 }
 
 .example__item--finquest {
@@ -2401,7 +2423,7 @@ li[role="presentation"] button {
   height: 227px;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  background-image: url(../images/bubble-3-bg.svg);
+  background-image: url(../../images/bubble-3-bg.svg);
 }
 
 .example__item::before {
@@ -2537,6 +2559,7 @@ li[role="presentation"] button {
 
 .camps {
   position: relative;
+  overflow: hidden;
 }
 
 .camps__container {
@@ -2553,7 +2576,7 @@ li[role="presentation"] button {
   right: 0;
   width: 50%;
   height: 100%;
-  background-image: url(../images/rectangle-bg.png);
+  background-color: #204479;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3306,6 +3329,7 @@ li[role="presentation"] button {
 
 .talk-to-us {
   position: relative;
+  overflow: hidden;
 }
 
 .talk-to-us__bg {
@@ -4081,7 +4105,7 @@ li[role="presentation"] button {
 .networking-space__item {
   width: 100%;
   height: 100% !important;
-  background-image: url(../images/networking-space.png);
+  background-image: url(../../images/networking-space.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
