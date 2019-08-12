@@ -1,42 +1,80 @@
 "use strict";
 
-var navBtn = document.querySelector(".user-menu__navigation-btn");
-var closeNavBtn = document.querySelector(".menu-top__close-btn");
-var navigation = document.querySelector(".main-navigation");
-navBtn.addEventListener("click", function (event) {
+var navBtn = document.querySelector('.user-menu__navigation-btn');
+var closeNavBtn = document.querySelector('.menu-top__close-btn');
+var navigation = document.querySelector('.main-navigation');
+navBtn.addEventListener('click', function (event) {
   if (event) {
-    navigation.classList.add("navigation-active");
+    navigation.classList.add('navigation-active');
   }
 });
-closeNavBtn.addEventListener("click", function (event) {
+closeNavBtn.addEventListener('click', function (event) {
   if (event) {
-    navigation.classList.remove("navigation-active");
+    navigation.classList.remove('navigation-active');
   }
-});
-var elements = document.querySelectorAll(".invest-portfolio__item");
+}); //
+
+$(document).ready(function () {
+  $('.investor-portfolio__firms-list').on('click', 'a', function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({
+      scrollTop: top
+    }, 1500);
+  });
+}); //
+
+var elements = document.querySelectorAll('.invest-portfolio__item');
 
 if (document.documentElement.clientWidth > 1200) {
   elements.forEach(function (item, i, arr) {
-    item.addEventListener("mouseover", function (event) {
-      item.classList.add("active");
+    item.addEventListener('mouseover', function (event) {
+      item.classList.add('active');
     });
-    item.addEventListener("mouseout", function (event) {
-      item.classList.remove("active");
+    item.addEventListener('mouseout', function (event) {
+      item.classList.remove('active');
     });
   });
 }
 
+if (document.documentElement.clientWidth < 725) {
+  elements.forEach(function (item, i, arr) {
+    item.addEventListener('click', function (event) {
+      if (item.classList.contains('active-mobile')) {
+        item.classList.remove('active-mobile');
+      } else {
+        item.classList.add('active-mobile');
+      }
+    });
+  });
+} //
+
+
 $(document).ready(function () {
-  $(".slider").slick({
+  $('.bubble-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    autoplay: true,
+    slidesToShow: 1,
+    fade: true,
+    adaptiveHeight: true,
+    cssEase: 'linear'
+  });
+});
+$(document).ready(function () {
+  $('.slider').slick({
     dots: true,
     infinite: true,
     speed: 300,
+    autoplay: true,
     slidesToShow: 1,
     adaptiveHeight: true
   });
 });
 $(document).ready(function () {
-  $(".talk-to-us-slider").slick({
+  $('.talk-to-us-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
@@ -106,40 +144,34 @@ $(document).ready(function () {
 //
 //
 //
-
-var liIndex = 1;
-showLi(liIndex);
-
-function currentLi(n) {
-  showLi(liIndex = n);
-}
-/* Основная функция слайдера */
-
-
-function showLi(n) {
-  var i;
-  var slides = document.getElementsByClassName("investor-portfolio__about-item");
-  var dots = document.getElementsByClassName("investor-portfolio__firms-item");
-
-  if (n > slides.length) {
-    liIndex = 1;
-  }
-
-  if (n < 1) {
-    liIndex = slides.length;
-  }
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active-item", "");
-  }
-
-  slides[liIndex - 1].style.display = "block";
-  dots[liIndex - 1].className += " active-item";
-} // $(document).ready(function() {
+// var liIndex = 1;
+// showLi(liIndex);
+// function currentLi(n) {
+//   showLi((liIndex = n));
+// }
+// /* Основная функция слайдера */
+// function showLi(n) {
+//   let i;
+//   let slides = document.getElementsByClassName(
+//     "investor-portfolio__about-item"
+//   );
+//   let dots = document.getElementsByClassName("investor-portfolio__firms-item");
+//   if (n > slides.length) {
+//     liIndex = 1;
+//   }
+//   if (n < 1) {
+//     liIndex = slides.length;
+//   }
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active-item", "");
+//   }
+//   slides[liIndex - 1].style.display = "block";
+//   dots[liIndex - 1].className += " active-item";
+// }
+// $(document).ready(function() {
 //   $(".investor-portfolio__firms").on("click", "a", function(event) {
 //     event.preventDefault();
 //     var id = $(this).attr("href"),
