@@ -1,1 +1,0 @@
-"use strict";$(".atmosphere-slider__wrapper").slick({dots:!0,arrows:!0,infinite:!0,speed:500,fade:!0,adaptiveHeight:!0,cssEase:"linear"});
