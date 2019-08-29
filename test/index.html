@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header_wrapper">
+        <nav class="main__navigation">
+          <div class="main-navigation__wrapper">
+            <ul class="main__navigation-list">
+              <li class="main__navigation-item logo">
+                <img src="img/dmi-logo.png" alt="dmi logo" />
+              </li>
+              <li class="main__navigation-item bluebook">
+                <button
+                  class="main__navigation-button main__navigation-button--bluebook"
+                >
+                  Bluebook
+                </button>
+              </li>
+              <li class="main__navigation-item">
+                <button class="main__navigation-button">
+                  Job Select
+                  <div class="dropdown__menu">
+                    <ul class="dropdown__menu-list">
+                      <li class="dropdown__menu-item">
+                        <a href="#">Account</a>
+                      </li>
+                      <li class="dropdown__menu-item">
+                        <a href="#">Logout</a>
+                      </li>
+                    </ul>
+                  </div>
+                </button>
+              </li>
+              <li class="main__navigation-item">
+                <button class="main__navigation-button">Setup</button>
+              </li>
+              <li class="main__navigation-item">
+                <button class="main__navigation-button">Reports</button>
+              </li>
+              <li class="main__navigation-item">
+                <button class="main__navigation-button">Custom Reports</button>
+              </li>
+              <li class="main__navigation-item">
+                <button class="main__navigation-button">Go To</button>
+              </li>
+            </ul>
+            <div class="main-navigation__login">
+              <span class="main-navigation__date"
+                >W12Z - Transactions through Apr 24, 2019</span
+              >
+              <button
+                class="main__navigation-button main__navigation-button--login"
+              >
+                Trent Johnson
+                <div class="dropdown__menu">
+                  <ul class="dropdown__menu-list">
+                    <li class="dropdown__menu-item">
+                      <a href="#">Account</a>
+                    </li>
+                    <li class="dropdown__menu-item">
+                      <a href="#">Logout</a>
+                    </li>
+                  </ul>
+                </div>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="panel__wrapper">
+        <div class="panel__left">
+          <p class="panel__paragraph">
+            <b>D1210H <sup>open</sup></b>
+            /
+            <b>Panel 1</b>
+          </p>
+          <button class="panel__edit-btn">Edit</button>
+          <ul class="panel__breadcrumbs">
+            <li class="panel__breadcrumbs-item">
+              <a href="#">Car Magnet New-To-File</a>
+            </li>
+            <li class="panel__breadcrumbs-item">
+              <a href="#">Mailed Aug 21, 2019</a>
+            </li>
+          </ul>
+        </div>
+        <div class="panel__right">
+          <ul class="panel__settings-buttons">
+            <li class="panel__settings-button-item">
+              <button
+                class="panel__settings-button panel__settings-button--add"
+              >
+                Add a List
+              </button>
+            </li>
+            <li class="panel__settings-button-item">
+              <button
+                class="panel__settings-button panel__settings-button--excel"
+              >
+                Export to Excel
+              </button>
+            </li>
+            <li class="panel__settings-button-item">
+              <button
+                class="panel__settings-button panel__settings-button--graph"
+              >
+                Create Graph
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="information">
+      <div class="information__wrapper">
+        <ul class="information__list">
+          <li class="information__item">
+            <h3 class="information__title">Mail Dates</h3>
+            <table class="information__table">
+              <tr>
+                <td class="td-name">Started</td>
+                <td class="td-value">Aug 21, 2019</td>
+              </tr>
+              <tr>
+                <td class="td-name">Days Out</td>
+                <td class="td-value">2,540</td>
+              </tr>
+            </table>
+          </li>
+          <li class="information__item">
+            <h3 class="information__title">Response Dates</h3>
+            <table class="information__table">
+              <tr>
+                <td class="td-name">First</td>
+                <td class="td-value">Aug 28, 2018</td>
+              </tr>
+              <tr>
+                <td class="td-name">Last</td>
+                <td class="td-value">Nov 11, 2018</td>
+              </tr>
+              <tr>
+                <td class="td-name">Forst Response</td>
+                <td class="td-value">7</td>
+              </tr>
+            </table>
+          </li>
+          <li class="information__item">
+            <h3 class="information__title">Total Quantities</h3>
+            <table class="information__table">
+              <tr>
+                <td class="td-name">Mailed</td>
+                <td class="td-value">100,000</td>
+              </tr>
+              <tr>
+                <td class="td-name">Paid Responses</td>
+                <td class="td-value">0 (.00%)</td>
+              </tr>
+              <tr>
+                <td class="td-name">Zero Responses</td>
+                <td class="td-value">0 (.00%)</td>
+              </tr>
+            </table>
+          </li>
+          <li class="information__item">
+            <h3 class="information__title">Cost</h3>
+            <table class="information__table">
+              <tr>
+                <td class="td-name">Package Cost</td>
+                <td class="td-value">$24.75</td>
+              </tr>
+              <tr>
+                <td class="td-name">List Rental Cost</td>
+                <td class="td-value">$0.00</td>
+              </tr>
+              <tr>
+                <td class="td-name">Back End Cost</td>
+                <td class="td-value">$0.00</td>
+              </tr>
+              <tr>
+                <td class="td-name">Total Cost/M</td>
+                <td class="td-value">$0.25</td>
+              </tr>
+            </table>
+          </li>
+          <li class="information__item">
+            <h3 class="information__title">Revenue</h3>
+            <table class="information__table">
+              <tr>
+                <td class="td-name">Gross Receipt</td>
+                <td class="td-value">$0.00</td>
+              </tr>
+              <tr>
+                <td class="td-name">Avg Resp</td>
+                <td class="td-value">$0.00</td>
+              </tr>
+              <tr>
+                <td class="td-name">Net Income</td>
+                <td class="td-value td-value--red">($12,750.00)</td>
+              </tr>
+              <tr>
+                <td class="td-name">Cost of Fundraising</td>
+                <td class="td-value">$0.25</td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
