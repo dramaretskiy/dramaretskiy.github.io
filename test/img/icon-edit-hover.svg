@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon-edit</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Design-01" transform="translate(-30.000000, -455.000000)" fill="#006AE4" fill-rule="nonzero">
+            <g id="table" transform="translate(19.000000, 318.000000)">
+                <g id="hover-row" transform="translate(1.000000, 108.000000)">
+                    <path d="M22.7,29.3 L25.7,32.3 C26.1,32.7 26.1,33.3 25.7,33.7 L18.7,40.7 C18.5,40.9 18.3,41 18,41 L15,41 C14.4,41 14,40.6 14,40 L14,37 C14,36.7 14.1,36.5 14.3,36.3 L21.3,29.3 C21.7,28.9 22.3,28.9 22.7,29.3 Z M17.6,39 L23.6,33 L22,31.4 L16,37.4 L16,39 L17.6,39 Z M25,39 C25.6,39 26,39.4 26,40 L26,44 C26,44.6 25.6,45 25,45 L11,45 C10.4,45 10,44.6 10,44 L10,30 C10,29.4 10.4,29 11,29 L15,29 C15.6,29 16,29.4 16,30 C16,30.6 15.6,31 15,31 L12,31 L12,43 L24,43 L24,40 C24,39.4 24.4,39 25,39 Z" id="icon-edit"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

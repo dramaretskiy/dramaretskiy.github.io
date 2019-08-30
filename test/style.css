@@ -525,6 +525,7 @@ button:hover {
 /* ********** */
 
 .information__wrapper {
+  margin-bottom: 40px;
   padding: 0 40px;
   padding-top: 60px;
 }
@@ -586,4 +587,134 @@ button:hover {
 
 .td-value--red {
   color: #ff343c;
+}
+
+/* **************** */
+/* Table statistics */
+/* **************** */
+
+.table-info__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 30px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.table-info__table {
+  min-width: 1358px;
+}
+
+.table-info__settings {
+  min-width: 70px;
+  padding-top: 117px;
+}
+
+.table-info__edit-btn,
+.table-info__move-btn {
+  width: 16px;
+  height: 16px;
+
+  font-size: 0px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.table-info__edit-btn {
+  margin-right: 8px;
+
+  background-image: url(img/icon-edit.svg);
+}
+
+.table-info__move-btn {
+  background-image: url(img/icon-move.svg);
+}
+
+.table-info__edit-btn:hover {
+  background-image: url(img/icon-edit-hover.svg);
+}
+
+.table-info__move-btn:hover {
+  background-image: url(img/icon-move-hover.svg);
+}
+
+.table-info__table .table-th {
+  padding: 0;
+  padding-bottom: 7px;
+
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #d8d8d8;
+  text-align: left;
+}
+
+.table-info-td {
+  padding: 0;
+
+  font-family: "Inter";
+  font-size: 13px;
+  line-height: 30px;
+  color: #1c2028;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.green-font {
+  color: #32ab4d;
+}
+
+.col-appeal {
+  min-width: 66px;
+  padding-right: 50px;
+}
+
+.col-description {
+  min-width: 107px;
+  padding-right: 226px;
+}
+
+.col-mailed {
+  min-width: 46px;
+  padding-right: 47px;
+}
+
+.col-paid {
+  min-width: 36px;
+  padding-right: 48px;
+}
+
+.col-zero {
+  min-width: 32px;
+  padding-right: 165px;
+}
+
+.col-cost {
+  min-width: 71px;
+  padding-right: 47px;
+}
+
+.col-net {
+  min-width: 71px;
+  padding-right: 48px;
+}
+
+.col-rap {
+  min-width: 44px;
+  padding-right: 47px;
+}
+
+.col-resp {
+  min-width: 71px;
+  padding-right: 47px;
+}
+
+.col-net-per {
+  min-width: 92px;
 }
